@@ -131,7 +131,7 @@
     - name: Restart the SSH daemon
       ansible.builtin.systemd:
         state: restarted
-        name: ssh
+        name: sshd 
 
 ##### Play 2:
 # This play starts after the last task in play 1 has completed successfully.
